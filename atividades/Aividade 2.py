@@ -1,5 +1,4 @@
 
-
 """
 
 ATIVIDADE 2 - OPERADORES
@@ -18,8 +17,6 @@ Tem plano? False. Você foi aceito? False.
 
 nome = str(input("Digite seu nome:"))
 idade = int(input("Digite sua idade:"))
-plano = bool(input("tem plano de saúde?:"))
-aceito = idade >= 18 and idade <= 65 and plano == True
-print("meu nome é", nome, "tenho", idade, "anos de idade e", "Voçê foi aceito?", aceito)
-
-
+plano = bool(input("tem plano de saúde? (True/false): "))
+aceito = (idade >= 18 and idade < 65) and plano
+print("Seu nome é", nome, "voçê tem", idade, "tem plano?", plano, "Voçê foi aceito?", aceito)
