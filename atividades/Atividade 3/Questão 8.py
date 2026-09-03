@@ -8,3 +8,12 @@ Exiba uma mensagem final mostrando: o nome do produto, o lucro obtido e o result
 da verificação (se o lucro foi bom = True ou False).
 """
 
+produto = input("Digite o nome do produto: ")
+custo = float(input("Digite o custo do produto: "))
+venda = float(input("Digite o vendido na loja: "))
+lucro = float(venda - custo)
+lucro_bom = bool(lucro > 200.00)
+print("O nome do produto: ", produto, "lucro obtido: ", lucro, "lucro foi bom?", lucro_bom )
+
+
+

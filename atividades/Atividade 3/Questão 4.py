@@ -7,4 +7,14 @@ Exiba a média calculada e, em seguida, exiba True se ele foi aprovado ou False 
 usando o operador and.
 """
 
+nota1 = float(input("Digite sua primeira nota: "))
+nota2 = float(input("Digite sua segunda nota: "))
+media = float(nota1 + nota2) / 2
+faltas = int(input("Quantas faltas o aluno obteve?"))
+aulas = 200
+frequencia = float((aulas - faltas))
+limite_falta = 200 * 0.75
+aprovado = bool(media >= 60 and frequencia >= limite_falta)
+print("O aluno obteve média:", media,  "aluno foi aprovado?", aprovado)
+
 
