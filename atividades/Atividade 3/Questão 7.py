@@ -8,7 +8,7 @@ na tela o resultado (True ou False).
 """
 idade = int(input("Digite sua idade: "))
 peso = float(input("Digite sua peso: "))
-doador = bool(idade >= 16 <= 69 or peso >= 50.0)
-input(bool("O doador preenche todos os requisitos para doar sangue?", doador))
+doador = bool(idade >= 16 and idade <= 69 or peso >= 50.0)
+print("O doador preenche todos os requisitos para doar sangue?", doador)
 
 
