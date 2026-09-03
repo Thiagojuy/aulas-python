@@ -9,7 +9,7 @@ ao frete grátis ou False caso não tenha.
 
 valor_compra = float(input("Digite o valor da compra: "))
 vip = int(input("Voçê possui o cartão VIP da loja?, digite 1 para sim, ou 0 para não"))
-frete_gratis = bool(valor_compra > 200.00 or vip == 1)
+frete_gratis = bool(valor_compra >= 200.00 or vip == 1)
 print("O cliente ganhou frete gratis?", frete_gratis)
 
 

@@ -7,11 +7,8 @@ Escreva a lógica que verifica se o doador atende a todas essas condições e ex
 na tela o resultado (True ou False).
 """
 idade = int(input("Digite sua idade: "))
-peso = int(input("Digite seu peso: "))
-peso_doador = float(peso >50)
-idade_doador = float(idade > 16)
-doador = float(idade_doador and peso_doador)
-print("O doador preenche todas as condições?", doador)
-
+peso = float(input("Digite sua peso: "))
+doador = bool(idade >= 16 <= 69 or peso >= 50.0)
+input(bool("O doador preenche todos os requisitos para doar sangue?", doador))
 
 
