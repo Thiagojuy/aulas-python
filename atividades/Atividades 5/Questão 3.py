@@ -10,4 +10,14 @@ Usando o match / case, exiba a mensagem correspondente:
 "Boa Noite!"
 "Turno inválido!" (para qualquer outro caractere)
 """
-
+turno = input("Qual é o seu turno de estudo: (M ou m para Matutino, V ou v para Vespertino, N ou n para Noturno")
+match turno:
+    case "M" | "m":
+        print("Bom Dia!")
+    case "N" | "n":
+        print("Boa Noite!")
+    case "V" | "v":
+        print("Boa Tarde!")
+    case _:
+        print("Turno inválido!")
+print("FIM")
