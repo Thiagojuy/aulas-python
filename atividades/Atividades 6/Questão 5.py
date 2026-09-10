@@ -7,5 +7,20 @@ Exemplo de saída esperada se o usuário digitar 5:
 5 x 1 = 5
 5 x 2 = 10
 ... (até 10)
-
 """
+
+# Pede ao usuário o número para a tabuada
+numero = int(input("Digite um número inteiro para ver a tabuada: "))
+
+# Inicializa o contador (variável de incremento)
+contador = 1
+
+print(f"\nTabuada do {numero}:")
+
+# O laço roda enquanto o contador for menor ou igual a 10
+while contador <= 10:
+    resultado = numero * contador
+    print(f"{numero} x {contador} = {resultado}")
+
+    # Incrementa o contador em 1 a cada repetição
+    contador += 1
