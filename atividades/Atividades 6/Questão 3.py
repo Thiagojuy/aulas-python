@@ -7,6 +7,7 @@ todos os números que foram digitados até aquele momento.
 """
 
 
+
 soma = 0
 while True:
     numero = int(input("Digite um numero inteiro: "))

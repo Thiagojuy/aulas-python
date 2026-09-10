@@ -1,7 +1,11 @@
 # REPETIÇÃO WHILE -> Enquanto
+# while (comparação ou valor boleano)
+# Executava caso fosse verdadeiro (True)
+
 # Estruturas de repetição
 # Laços de repetição
 # Loop
+from os import remove
 
 # ano_nascimento = 2004
 # ano_final = 2077
@@ -23,33 +27,71 @@
 #     seu_nome = input("Digite seu nome novamente: ")
 
 
-fichas = 2
-while fichas != 0: # sistema da maquina do fliperama
-    tentativas = 3
+# fichas = 2
+# while fichas != 0: # sistema da maquina do fliperama
+#     tentativas = 3
+#
+#     print(f"Você tem {fichas} quantidade de fichas.")
+#     while True: # sistema do jogo do fliperama
+#         print(f"Você tem {tentativas} tentativas.")
+#         opcao = input("Escolha uma opção:")
+#         if opcao == "b":
+#             print("Você ganhou!")
+#             fichas = 0
+#             break
+#         elif tentativas == 1:
+#             print("Você perdeu")
+#             break
+#         else:
+#             tentativas -= 1
+#
+#     fichas -= 1
+#     if fichas <= 0:
+#         break
 
-    print(f"Você tem {fichas} quantidade de fichas.")
-    while True: # sistema do jogo do fliperama
-        print(f"Você tem {tentativas} tentativas.")
-        opcao = input("Escolha uma opção:")
-        if opcao == "b":
-            print("Você ganhou!")
-            fichas = 0
+
+
+#REPETIÇÃO FOR (para)
+
+# for (item -> variável temporária) in (lista de valores):
+#         index   0        1         2
+lista_alunos = []
+num_aluno = 0
+num_aluno_final = 0
+print("ADICIONANDO ALUNOS NA LISTA DE CHAMADA")
+while True: # sisitema de adição
+    while True: # adicionar alunos
+        aluno = input("Digite o nome do aluno: ")
+        lista_alunos.append(aluno)
+
+        opcao = input("Deseja continuar? [S/N]: ") #finalizar adição
+        if opcao == "N":
             break
-        elif tentativas == 1:
-            print("Você perdeu")
+
+    print("Lista atual dos alunos.")
+    for i in lista_alunos: # imprime a lista de alunos total
+        print(f"Nome do aluno {num_aluno}: {i}")
+        num_aluno += 1
+
+    print("Escolha uma opção:")
+
+    opcao_match = input("a) apagar um aluno da chamada\n"
+                        "b) adicionar um aluno da chamada\n"
+                        "c) finalizar o programa\n")
+
+    match opcao_match:
+        case 'a':
+            aluno_apagado = input("Digite o nome do aluno que deseja apagar: ")
+            lista_alunos.remove(aluno_apagado)
             break
-        else:
-            tentativas -= 1
+        case 'b':
+            aluno_adicionado = input("Digite o nome do aluno que deseja adicionar: ")
+            lista_alunos.append(aluno_adicionado)
+            break
+        case _:
+            break
 
-    fichas -= 1
-    if fichas <= 0:
-        break
-
-
-
-
-
-
-
-
-
+print("A sua turma ficou com todos esses alunos:")
+for i in lista_alunos: # imprime a lista de alunos total
+    print(f"Nome do aluno {num_aluno_final}: {i}")
+    num_aluno_final += 1
