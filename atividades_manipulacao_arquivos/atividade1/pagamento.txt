@@ -1,0 +1,6 @@
+Cliente: Thiago
+Produtos:
+- Arroz: R$ 20.00
+- eijão: R$ 8.00
+- sal: R$ 3.00
+TOTAL: R$ 31.00
