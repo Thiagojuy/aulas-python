@@ -45,4 +45,53 @@ with open("catalogo.json", "w", encoding="utf-8") as arquivo_json:
 print("Arquivo 'catalogo.json' gerado com sucesso!")
 
 
+#import json
+
+# 1. Criando mais 5 livros diferentes diretamente no código como dicionários
+novos_livros = [
+    {
+        "id": 31,
+        "nome": "Código Limpo",
+        "descricao": "Habilidades práticas do Agile Software",
+        "preco": 85.90,
+        "em_estoque": 120
+    },
+    {
+        "id": 32,
+        "nome": "O Programador Pragmático",
+        "descricao": "Sua jornada para a maestria em programação",
+        "preco": 92.50,
+        "em_estoque": 150
+    },
+    {
+        "id": 33,
+        "nome": "Padrões de Projetos",
+        "descricao": "Soluções reutilizáveis de software orientado a objetos",
+        "preco": 120.00,
+        "em_estoque": 80
+    },
+    {
+        "id": 34,
+        "nome": "Introdução aos Algoritmos",
+        "descricao": "A bíblia dos algoritmos e estruturas de dados",
+        "preco": 189.90,
+        "em_estoque": 6
+    },
+    {
+        "id": 35,
+        "nome": "Refatoração",
+        "descricao": "Aperfeiçoando o design de códigos existentes",
+        "preco": 99.00,
+        "em_estoque": 7
+    }
+]
+
+# 2. Adicionando os novos dicionários à lista principal (catalogo_livros)
+catalogo_livros.extend(novos_livros)
+
+# 3. Atualizando o arquivo original 'catalogo.json' com a lista completa
+with open("catalogo.json", "w", encoding="utf-8") as arquivo_json:
+    json.dump(catalogo_livros, arquivo_json, indent=4, ensure_ascii=False)
+
+print(f"Arquivo 'catalogo.json' atualizado com sucesso! Total de livros no catálogo: {len(catalogo_livros)}.")
 

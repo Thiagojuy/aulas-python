@@ -208,5 +208,40 @@
         "descricao": "O ultimo romance de Clarice Lispector",
         "preco": 29.9,
         "em_estoque": 17
+    },
+    {
+        "id": 31,
+        "nome": "Código Limpo",
+        "descricao": "Habilidades práticas do Agile Software",
+        "preco": 85.9,
+        "em_estoque": 120
+    },
+    {
+        "id": 32,
+        "nome": "O Programador Pragmático",
+        "descricao": "Sua jornada para a maestria em programação",
+        "preco": 92.5,
+        "em_estoque": 150
+    },
+    {
+        "id": 33,
+        "nome": "Padrões de Projetos",
+        "descricao": "Soluções reutilizáveis de software orientado a objetos",
+        "preco": 120.0,
+        "em_estoque": 80
+    },
+    {
+        "id": 34,
+        "nome": "Introdução aos Algoritmos",
+        "descricao": "A bíblia dos algoritmos e estruturas de dados",
+        "preco": 189.9,
+        "em_estoque": 6
+    },
+    {
+        "id": 35,
+        "nome": "Refatoração",
+        "descricao": "Aperfeiçoando o design de códigos existentes",
+        "preco": 99.0,
+        "em_estoque": 7
     }
 ]
